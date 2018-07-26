@@ -1,3 +1,94 @@
 extends layouts/default
 
 block content
+
+    section.wrapper
+        .left-bar
+            a(href='#').left-bar__block
+                .left-bar__block__img
+                    img(src="images/cloud.png")
+                .left-bar__block__name CLOUD
+        .content
+            .messages
+                h2 Messages
+                table.messages__table
+                    tr.messages__table__title
+                        th Date
+                        th Name
+                        th Actions
+                    tr.bold.messages__table__info
+                        td 09/10/2018  3:43:23 PM
+                        td.messages__table__info__name msg0007
+                        td.messages__table__info__buts
+                            a(href='#').butt.butt__play play
+                            a(href='#').butt.butt__email Email
+                            a(href='#').butt.butt__save Save
+                            a(href='#').butt.butt__delete delete
+                    tr.bold.messages__table__info
+                        td 09/10/2018  3:43:21 PM
+                        td.messages__table__info__name msg0006
+                        td.messages__table__info__buts
+                            a(href='#').butt.butt__play play
+                            a(href='#').butt.butt__email Email
+                            a(href='#').butt.butt__save Save
+                            a(href='#').butt.butt__delete delete
+                    tr.messages__table__info
+                        td 09/10/2018  3:43:19 PM
+                        td.messages__table__info__name msg0005
+                        td.messages__table__info__buts
+                            a(href='#').butt.butt__play play
+                            a(href='#').butt.butt__email Email
+                            a(href='#').butt.butt__save Save
+                            a(href='#').butt.butt__delete delete
+                    tr.messages__table__info
+                        td 09/10/2018  3:43:19 PM
+                        td.messages__table__info__name msg0004
+                        td.messages__table__info__buts
+                            a(href='#').butt.butt__play play
+                            a(href='#').butt.butt__email Email
+                            a(href='#').butt.butt__save Save
+                            a(href='#').butt.butt__delete delete
+                    tr.messages__table__info
+                        td 09/10/2018  3:43:19 PM
+                        td.messages__table__info__name msg0003
+                        td.messages__table__info__buts
+                            a(href='#').butt.butt__play play
+                            a(href='#').butt.butt__email Email
+                            a(href='#').butt.butt__save Save
+                            a(href='#').butt.butt__delete delete
+                    tr.messages__table__info
+                        td 09/10/2018  3:43:19 PM
+                        td.messages__table__info__name msg0002
+                        td.messages__table__info__buts
+                            a(href='#').butt.butt__play play
+                            a(href='#').butt.butt__email Email
+                            a(href='#').butt.butt__save Save
+                            a(href='#').butt.butt__delete delete
+            .plan
+                h2 Plan
+                .plan__block
+                    .plan__block__title
+                        b
+                            span BASIC
+                            | 10GB
+                        | / Mth
+                    a(href='#').butt.butt__big UPGRADE
+            .actions
+                h2 Actions
+                .actions__block
+                    ul
+                        li
+                            a
+                                .actions__block__img
+                                    img(src="images/how-to.png")
+                                .actions__block__title How To
+                        li
+                            a
+                                .actions__block__img
+                                    img(src="images/print.png")
+                                .actions__block__title Print
+                        li
+                            a
+                                .actions__block__img
+                                    img(src="images/email.png")
+                                .actions__block__title Email

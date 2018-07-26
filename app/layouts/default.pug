@@ -28,18 +28,37 @@ html.no-js(lang='')
           a(href='#')
            img(src='images/logo.png')
         ul.header__menu
-          li
-            - var list = ["DASHBOARD", "DEVICES", "CLOUD", "STATISTICS", "CONTACTS", "INVOICES ","ACCOUNTS", "TOOLS"]
-            each item in list
-             a(href='#')= item
-        .header__profile
+            li
+              a(href='#') DASHBOARD
+            li
+              a(href='#') DEVICES
+            li
+              a(href='#').active CLOUD
+            li
+              a(href='#') STATISTICS
+            li
+              a(href='#') CONTACTS
+            li
+              a(href='#') INVOICES
+            li
+              a(href='#') ACCOUNTS
+            li
+              a(href='#') TOOLS
+        a(href='#').header__profile
           .header__profile__img
-          .header__profile__profile
-            jo
-          .header__profile__type
+          .header__profile__info
+            .header__profile__info__name John Doe
+            .header__profile__info__type Super Admin
+        a(href='#').header__p-exit
+          .header__p-exit__img
+          .header__p-exit__text LOGOUT
+        .header__right-menu
+          .header__right-menu__butt
+            span
+            span
+            span
 
-
-      block content
+    block content
 
 
     // Google Analytics: change UA-XXXXX-X to be your site's ID.
