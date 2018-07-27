@@ -1,0 +1,129 @@
+extends layouts/default
+
+block content
+
+    section.wrapper
+        .left-bar
+            a(href='#').left-bar__block
+                .left-bar__block__img
+                    img(src="images/user.png")
+                .left-bar__block__name USER PROFILE
+        .content
+            form
+                .user-profile.form-block
+                    h2  User Profile
+                    .user-profile__block
+                        label
+                            p Email Address
+                            input(type='email')
+                        label
+                            p First Name
+                            input(type='text')
+                        label
+                            p Last Name
+                            input(type='text')
+                        label
+                            p Organization
+                            input(type='text')
+                        label
+                            p Website
+                            input(type='text')
+                        label
+                            p Street
+                            input(type='text')
+                        label
+                            p City
+                            input(type='text')
+                        label
+                            p Province
+                            input(type='text')
+                        label
+                            p Country
+                            input(type='text')
+                        label
+                            p Phone Number
+                            input(type='tel')
+                        label
+                            p Misc.
+                            input(type='text')
+                .content__list.checked-block
+                    .devices
+                        h2  Devices
+                        .devices__block
+                            label
+                                .devices__block__name SN
+                                .devices__block__numb 626748
+                                .devices__block__check
+                                    input(type='checkbox' checked)
+                                    span
+                            label
+                                .devices__block__name SN
+                                .devices__block__numb 626748
+                                .devices__block__check
+                                    input(type='checkbox' checked)
+                                    span
+                            label
+                                .devices__block__name SN
+                                .devices__block__numb 626748
+                                .devices__block__check
+                                    input(type='checkbox' checked)
+                                    span
+                            label
+                                .devices__block__name SN
+                                .devices__block__numb 626748
+                                .devices__block__check
+                                    input(type='checkbox')
+                                    span
+                            label
+                                .devices__block__name SN
+                                .devices__block__numb 626748
+                                .devices__block__check
+                                    input(type='checkbox' checked)
+                                    span
+                    .caller-id.form-block
+                        h2 Caller ID
+                        .caller-id__block
+                            label
+                                p CID Number
+                                input(type='email')
+                            label
+                                p CID Name
+                                input(type='email')
+                .c-password.form-block
+                    h2 Caller ID
+                    .c-password__block
+                        label
+                            p Old Password
+                            input(type='password')
+                        label
+                            p New Password
+                            input(type='password')
+                        label
+                            p New Password
+                            input(type='password')
+
+
+                .content__list.right
+                    .actions
+                        h2 Actions
+                        .actions__block
+                            ul
+                                li
+                                    a(href='#')
+                                        .actions__block__img
+                                            img(src="images/how-to.png")
+                                        .actions__block__title How To
+                                li
+                                    a(href='#')
+                                        .actions__block__img
+                                            img(src="images/print.png")
+                                        .actions__block__title Print
+                                li
+                                    a(href='#')
+                                        .actions__block__img
+                                            img(src="images/email.png")
+                                        .actions__block__title Email
+                    .form-submit
+                        .form-submit__block
+                            input(type='submit' value='Save Changes').butt.butt__submit-save
+                            input(type='button' value='Cansel').butt.butt__cansel

@@ -11,10 +11,64 @@ $borange:#F2953D;
 $yellowW:#FFF4E9;
 $orange:#f7931e;
 $green:#40BE64;
+$green1:#87C74B;
+$green2:#82CF5E;
 $gray:#8FC6C6;
 $gray1:#D6E0E5;
 $orange1:#FCA045;
 $red:#FF1C2A;
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+       url('../fonts/OpenSans-SemiBold.ttf')  format('truetype'),
+       url('../fonts/OpenSans-SemiBold.svg#OpenSans-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.ttf')  format('truetype'),
+  url('../fonts/OpenSans-Regular.svg#OpenSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Light.woff') format('woff'),
+       url('../fonts/OpenSans-Light.ttf')  format('truetype'),
+       url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/OpenSans-Bold.woff') format('woff'),
+       url('../fonts/OpenSans-Bold.ttf')  format('truetype'),
+       url('../fonts/OpenSans-Bold.svg#OpenSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Montserrat-SemiBold.woff') format('woff'),
+       url('../fonts/Montserrat-SemiBold.ttf')  format('truetype'),
+       url('../fonts/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body{
   min-width: 1280px;
 }
@@ -66,6 +120,30 @@ h2{
     font-family: 'OpenSans-Bold';
     font-size: 18px;
   }
+  &__submit-save{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    height: 55px;
+    width: 150px;
+    box-shadow: none;
+    background: $green2;
+    font-size: 18px;
+    font-family: 'OpenSans-SemiBold';
+  }
+  &__cansel{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    justify-content: center;
+    height: 55px;
+    width: 150px;
+    box-shadow: none;
+    background: #8FC5C4;
+    font-size: 18px;
+    font-family: 'OpenSans-SemiBold';
+  }
   &:hover{
     opacity: 0.65;
     color: white;
@@ -98,6 +176,7 @@ h2{
         color: white;
         font-family: 'Montserrat-SemiBold';
         transition: 0.3s all;
+        font-size: 14px;
         &:hover,
         &.active{
           text-decoration: none;
@@ -216,13 +295,13 @@ h2{
     height: 285px;
     margin-top: 20px;
     transition: 0.3s all;
-     &__img{
-       padding-bottom: 49px;
-       img{
-         max-width: 250px;
-         max-height: 50%;
-       }
-     }
+    &__img{
+      padding-bottom: 49px;
+      img{
+        max-width: 250px;
+        max-height: 50%;
+      }
+    }
     &__name{
       text-transform: uppercase;
       font-family: 'Montserrat-SemiBold';
@@ -242,6 +321,18 @@ h2{
   justify-content: space-between;
   width: 80%;
   padding: 42px 0px 40px 35px;
+  &__list{
+    display: flex;
+    flex-direction:column;
+    &.right{
+      justify-self: flex-end;
+    }
+  }
+  form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 .messages{
   margin-right: 2.5%;
@@ -286,6 +377,7 @@ h2{
 }
 .plan{
   margin-right: 2.5%;
+  margin-bottom: 45px; 
   &__block{
     display: flex;
     flex-direction: column;
@@ -315,8 +407,10 @@ h2{
 .actions{
   &__block{
     padding: 12px 23px;
+    width: 175px;
     background: $blue;
-    border-radius: 20px 0 0 20px;
+    border-radius: 15px 0 0 15px;
+    margin-bottom: 25px;
     ul{
       display: flex;
       flex-direction: column;
@@ -338,5 +432,306 @@ h2{
       color: $purple;
       padding-left: 10px;
     }
+  }
+}
+.user-profile{
+  max-width: 400px;
+  &__block{
+    background: $blue;
+    border-radius: 15px;
+    padding: 15px;
+  }
+}
+
+.form-block{
+  label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    p{
+      font-family: 'OpenSans-SemiBold';
+      font-size: 18px;
+      color: $blue1;
+      padding-right: 10px;
+    }
+    input{
+      justify-self: flex-end;
+      width: 224px;
+      height: 56px;
+      border-radius: 10px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      border: 1px solid #C8D6DC;
+      transition: 0.3s all;
+      &:focus{
+        outline: 0;
+        border-color: $purpleW;
+      }
+    }
+  }
+}
+.devices{
+  max-width: 400px;
+  margin-bottom: 50px;
+  &__block{
+    display: flex;
+    flex-direction: column;
+    padding: 21px 23px;
+    background: $blue;
+    border-radius: 15px;
+    label{
+      margin-bottom: 16px;
+      display: flex;
+      color: white;
+      background: $purple;
+      border-radius: 5px;
+      padding: 0px 22px;
+      height: 55px;
+      align-items: center;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+    &__name{
+      padding-right: 30px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family:"OpenSans-Bold";
+    }
+    &__numb{
+      font-size: 18px;
+      color: #e7f2f2;
+      width: 150px;
+      font-family: 'OpenSans-Regular';
+    }
+    &__check{
+      position: relative;
+      cursor: pointer;
+      input[type='checkbox']{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+      span{
+        width: 74px;
+        height: 31px;
+        display: inline-block;
+        border-radius: 20px;
+        border: 2px solid $red;
+        position: relative;
+        transition: 0.3s all;
+        &:after{
+          content: '';
+          position: absolute;
+          left: 2px;
+          top: 2px;
+          height: 23px;
+          width: 23px;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%;
+          background: $red;
+          transition: 0.3s all;
+        }
+        &:before{
+          content: 'OFF';
+          color: $red;
+          position: absolute;
+          right: 9px;
+          top: 4px;
+          font-size: 14px;
+          font-family: 'OpenSans-Bold';
+          transition: 0.3s all;
+        }
+      }
+      input[type='checkbox']:checked + span{
+        border-color: $green1;
+        &:after{
+          background: $green1;
+          left: 45px;
+        }
+        &:before{
+          right: 40px;
+          content: 'ON';
+          color: $green1;
+        }
+      }
+    }
+  }
+}
+.caller-id{
+  &__block{
+    display: flex;
+    flex-direction: column;
+    padding: 21px 23px;
+    background: $blue;
+    border-radius: 15px;
+
+  }
+}
+.c-password{
+  &__block{
+    display: flex;
+    flex-direction: column;
+    padding: 21px 23px;
+    background: $blue;
+    border-radius: 15px;
+
+  }
+}
+.form-submit{
+  &__block{
+    padding: 20px;
+    border-radius: 15px 0 0 15px;
+    width: 175px;
+    background: $yellowW;
+    input{
+      margin-bottom: 23px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// MEDIA RESIZE
+
+
+@media screen and (max-width: 1770px){
+  .form-block label input{
+    width: 180px;
+  }
+  .form-block label p{
+    font-size: 16px;
+  }
+  .devices__block__numb{
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 1660px){
+  .devices__block,
+  .c-password__block,
+  .caller-id__block{
+    padding: 21px 15px;
+  }
+  .form-block label p{
+    padding-right: 5px;
+  }
+  .messages__table__info__name{
+    min-width: 250px;
+  }
+  .header__menu li a{
+    padding: 0 20px;
+    font-size: 13px;
+  }
+  .left-bar{
+    width: 17%;
+  }
+  .content{
+    width: 83%;
+  }
+  .messages__table__info td{
+    font-size: 16px;
+  }
+  .plan__block{
+    padding: 20px 30px;
+  }
+  .logo img{
+    max-width: 250px;
+  }
+  .butt__big{
+    padding: 0 55px;
+  }
+  .header{
+    padding: 0 30px;
+  }
+  .left-bar__block{
+    height: 235px;
+  }
+  .messages__table__info td{
+    padding: 12px;
+  }
+  .messages,
+  .plan{
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 1405px){
+  .form-block label p{
+    font-size: 14px;
+  }
+  .form-block label input{
+    height: 40px;
+    width: 150px;
+  }
+  .devices__block__numb{
+    width: 100px;
+    font-size: 14px;
+  }
+  .devices__block__name{
+    padding-right: 15px;
+    font-size: 14px;
+  }
+  .devices__block label{
+    height: 46px;
+    padding: 0 15px;
+  }
+  .header{
+    padding: 0 20px;
+  }
+  .logo img{
+    width: 225px;
+  }
+  .header__menu li a {
+    padding: 0 15px;
+    font-size: 12px;
+  }
+  .header__profile__info{
+    font-size: 13px;
+  }
+  .left-bar__block__img img{
+    max-width: 200px;
+    max-height: 100px;
+  }
+  .left-bar__block__img{
+    padding-bottom: 25px;
+  }
+  .left-bar__block__name{
+    font-size: 18px;
+  }
+  .messages__table__title th{
+    padding: 12px;
+  }
+  .messages__table__info td{
+    font-size: 14px;
+  }
+  .messages__table__info__name{
+    min-width: 200px;
+  }
+  .butt{
+    font-size: 12px;
+  }
+  .plan__block__title{
+    font-size: 18px;
+  }
+  .butt__delete{
+    background: url("../images/b-delete.png") no-repeat left 5px center/10px, #FF1C2A
+  }
+  .butt__play {
+    background: url(../images/b-play.png) no-repeat left 5px center/10px, #40BE64;
   }
 }
