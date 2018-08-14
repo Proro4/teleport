@@ -1,0 +1,118 @@
+extends layouts/default
+
+block content
+
+    section.wrapper
+        .left-bar
+            a(href='device-summary.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/device-summary.png")
+                .left-bar__block__name DEVICE SUMMARY
+            a(href='device-list.html').left-bar__block.active
+                .left-bar__block__img
+                    img(src="images/device-list.png")
+                .left-bar__block__name DEVICE LIST
+            a(href='device-add.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/device-add.png")
+                .left-bar__block__name ADD DEVICE
+        .content
+            .device-list
+                h2 DEVICE LIST
+                .device-list__info
+                    table.table
+                        tr.table__title
+                            th ID
+                            th Name
+                            th Serial
+                            th MAC
+                            th Cloud
+                            th SMS
+                            th Email
+                            th Profile
+                        tr.table__info
+                            td 618
+                            td My House...
+                            td 3938593475
+                            td k0zA2234n8h4
+                            td 165474
+                            td 1-416-453-4533
+                            td info@sample.com
+                            td info@sample.com
+                        tr.table__info
+                            td 618
+                            td My House...
+                            td 3938593475
+                            td k0zA2234n8h4
+                            td 165474
+                            td 1-416-453-4533
+                            td info@sample.com
+                            td info@sample.com
+                        tr.table__info
+                            td 618
+                            td My House...
+                            td 3938593475
+                            td k0zA2234n8h4
+                            td 165474
+                            td 1-416-453-4533
+                            td info@sample.com
+                            td info@sample.com
+                        tr.table__info
+                            td 618
+                            td My House...
+                            td 3938593475
+                            td k0zA2234n8h4
+                            td 165474
+                            td 1-416-453-4533
+                            td info@sample.com
+                            td info@sample.com
+                        tr
+                            td.table-inner(colspan='8')
+                                table
+                                    tr
+                                        td
+                                            .table-block
+                                                p.table__info__id 901
+                                                span.table__info__online online
+                                                .table__info__ms 12 ms
+                                        td
+                                            .table-block
+                                        td
+                                            .table-block
+                                        td
+                                            a(href='#').table-info
+                                    tr
+                                        td
+                                            .table-block
+                                                p.table__info__id 901
+                                                span.table__info__offline offline
+                                                .table__info__ms 12 ms
+                                        td
+                                            .table-block
+                                        td
+                                            .table-block
+                                        td
+                                            a(href='#').table-info
+                                    tr
+                                        td
+                                            .table-block
+                                                p.table__info__id 901
+                                                span.table__info__online online
+                                                .table__info__ms 12 ms
+                                        td
+                                            .table-block
+                                        td
+                                            .table-block
+                                        td
+                                            a(href='#').table-info
+                        tr.table__info
+                            td 618
+                            td My House...
+                            td 3938593475
+                            td k0zA2234n8h4
+                            td 165474
+                            td 1-416-453-4533
+                            td info@sample.com
+                            td info@sample.com
+                    .search
+                        input(type='text')

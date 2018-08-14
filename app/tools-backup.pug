@@ -1,0 +1,131 @@
+extends layouts/default
+
+block content
+
+    section.wrapper
+        .left-bar
+            a(href='tools-diagnostics.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/diagnostics.png")
+                .left-bar__block__name DIAGNOSTICS
+            a(href='tools-backup.html').left-bar__block.active
+                .left-bar__block__img
+                    img(src="images/backup.png")
+                .left-bar__block__name backup
+            a(href='tools-diagnostics.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/configuration.png")
+                .left-bar__block__name CONFIGURATION
+        .content
+            .content__list
+                .backup.checkbox-form
+                    h2 Backup
+                    .checkbox-form__block
+                        label
+                            p Auto
+                            input(type='checkbox')
+                            span
+                        label
+                            p Every 12H
+                            input(type='checkbox')
+                            span
+                        label
+                            p DB
+                            input(type='checkbox')
+                            span
+                        label
+                            p Local
+                            input(type='checkbox')
+                            span
+                        label
+                            p Every 24H
+                            input(type='checkbox')
+                            span
+                        label
+                            p Files
+                            input(type='checkbox')
+                            span
+                        label
+                            p Remote
+                            input(type='checkbox')
+                            span
+                .backup.checkbox-form
+                    h2 Backup
+                    .checkbox-form__block
+                        label
+                            p Manual
+                            input(type='checkbox')
+                            span
+                        input(type='text' placeholder='Please enter name...')
+                        label
+                            p DB
+                            input(type='checkbox')
+                            span
+                        label
+                            p Local
+                            input(type='checkbox')
+                            span
+                        label
+                            p Files
+                            input(type='checkbox')
+                            span
+                        label
+                            p Remote
+                            input(type='checkbox')
+                            span
+                .messages
+                    h2 Backup History
+                    table.table
+                        tr.table__title
+                            th Date
+                            th Name
+                            th File
+                            th Actions
+                        tr.table__info
+                            td.table__info__date 09/10/2018  3:43:23 PM
+                            td.table__info__name My Test Backup
+                            td.table__info__file my_test_backup.sql
+                            td.table__info__buts
+                                a(href='#').butt.butt__download Download
+                                a(href='#').butt.butt__restore Restore
+                                a(href='#').butt.butt__delete-1 Delete
+                        tr.table__info
+                            td.table__info__date 09/10/2018  3:34:12 PM
+                            td.table__info__name First Backup
+                            td.table__info__file first_backup.sql
+                            td.table__info__buts
+                                a(href='#').butt.butt__download Download
+                                a(href='#').butt.butt__restore Restore
+                                a(href='#').butt.butt__delete-1 Delete
+            .backup.checkbox-form
+                h2 Backup
+                .checkbox-form__block
+                    label(title='Choose File...' class='backup__file')
+                        input(type='file')
+                    label
+                        p Auto
+                        input(type='checkbox')
+                        span
+                    label
+                        p Every 12H
+                        input(type='checkbox')
+                        span
+            .actions
+                h2 Actions
+                .actions__block
+                    ul
+                        li
+                            a(href='#')
+                                .actions__block__img
+                                    img(src="images/how-to.png")
+                                .actions__block__title How To
+                        li
+                            a(href='#')
+                                .actions__block__img
+                                    img(src="images/print.png")
+                                .actions__block__title Print
+                        li
+                            a(href='#')
+                                .actions__block__img
+                                    img(src="images/email.png")
+                                .actions__block__title Email

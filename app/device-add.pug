@@ -1,0 +1,140 @@
+extends layouts/default
+
+block content
+
+    section.wrapper
+        .left-bar
+            a(href='device-summary.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/device-summary.png")
+                .left-bar__block__name DEVICE SUMMARY
+            a(href='device-list.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/device-list.png")
+                .left-bar__block__name DEVICE LIST
+            a(href='device-add.html').left-bar__block.active
+                .left-bar__block__img
+                    img(src="images/device-add.png")
+                .left-bar__block__name ADD DEVICE
+        .content
+            form
+                .form-block
+                    h2  Add New Device
+                    .user-profile__block
+                        label
+                            p Device Name
+                            input(type='text')
+                        label
+                            p SerialNumber
+                            input(type='text')
+                        label
+                            p MAC Address
+                            input(type='text')
+                        label
+                            p Cloud Storage
+                            .form-block__select
+                                select
+                                    option Choose Plan
+                                    option Choose Plan1
+                                    option Choose Plan2
+                                    option Choose Plan3
+                        label
+                            p Notify SMS
+                            input(type='text')
+                        label
+                            p Notify Email
+                            input(type='text')
+                        label
+                            p Profile
+                            .form-block__select
+                                select
+                                    option Choose Plan
+                                    option Choose Plan1
+                                    option Choose Plan2
+                                    option Choose Plan3
+                        label
+                            textarea
+                .content__list.form-block
+                    .extensions
+                        h2  Extensions
+                        .extensions__block
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label
+                                .extensions__block__numb 626748
+                            label.timeout
+                                p Timeout
+                                .form-block__select
+                                    select
+                                        option 15 sec
+                                        option 30 sec
+                                        option 45 sec
+                                        option 1 min
+                .form-block
+                    h2  Configuration
+                    .user-profile__block
+                        label
+                            p Server
+                            .form-block__select
+                                select
+                                    option Choose Server
+                                    option Choose Server1
+                                    option Choose Server2
+                                    option Choose Server3
+                        label
+                            p Login
+                            input(type='text')
+                        label
+                            p Password
+                            input(type='password')
+                        label
+                            p Caller ID
+                            input(type='text')
+                        label
+                            p Group
+                            input(type='text')
+                        label
+                            p PIN
+                            input(type='text')
+                        label
+                            p MAC
+                            input(type='text')
+                        label.column
+                            p Description
+                            textarea
+                .content__list.right
+                    .actions
+                        h2 Actions
+                        .actions__block
+                            ul
+                                li
+                                    a(href='#')
+                                        .actions__block__img
+                                            img(src="images/how-to.png")
+                                        .actions__block__title How To
+                                li
+                                    a(href='#')
+                                        .actions__block__img
+                                            img(src="images/print.png")
+                                        .actions__block__title Print
+                                li
+                                    a(href='#')
+                                        .actions__block__img
+                                            img(src="images/email.png")
+                                        .actions__block__title Email
+                    .form-submit
+                        .form-submit__block
+                            input(type='submit' value='Save Changes').butt.butt__submit-save
+                            input(type='button' value='Cansel').butt.butt__cansel

@@ -1,0 +1,28 @@
+extends layouts/default
+
+block content
+
+    section.wrapper
+        .left-bar
+            a(href='device-summary.html').left-bar__block.active
+                .left-bar__block__img
+                    img(src="images/device-summary.png")
+                .left-bar__block__name DEVICE SUMMARY
+            a(href='device-list.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/device-list.png")
+                .left-bar__block__name DEVICE LIST
+            a(href='device-add.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/device-add.png")
+                .left-bar__block__name ADD DEVICE
+        .content
+            .device-summary
+                h2 SUMMARY
+                .device-summary__block
+                    .device-summary__block__name Devices
+                    .device-summary__block__numb 698
+                .device-summary__block
+                    .device-summary__block__name Extensions
+                    .device-summary__block__numb 2300
+

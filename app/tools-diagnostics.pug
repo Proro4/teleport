@@ -1,0 +1,54 @@
+extends layouts/default
+
+block content
+
+    section.wrapper
+        .left-bar
+            a(href='tools-diagnostics.html').left-bar__block.active
+                .left-bar__block__img
+                    img(src="images/diagnostics.png")
+                .left-bar__block__name DIAGNOSTICS
+            a(href='tools-backup.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/backup.png")
+                .left-bar__block__name backup
+            a(href='tools-diagnostics.html').left-bar__block
+                .left-bar__block__img
+                    img(src="images/configuration.png")
+                .left-bar__block__name CONFIGURATION
+        .content
+            .tools-diagnostics
+                h2 DIAGNOSTIC
+                table.table
+                    tr.table__title
+                        th Destination IP
+                        th PING
+                        th Trace route
+                    tr.table__info
+                        td
+                        td
+                        td
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
+                    tr.table__info
+                        td(colspan='3') 64 bytes from lga25s54-in-f206.1e100.net (172.217.6.206):icmp_s
